@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* --------------------    UTILITY  CLASSES  -----------*/
+
+.h2-heading{
+    font-size: 2rem;
+}
+
+.h1-heading{
+    font-size: 2.5rem;
+    padding-bottom: 0.5em;
+}
+.h3-heading{
+    font: 2.5rem;
+    color: white;
+}
+.p-heading{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+.para-small{
+    font-size: 1.2rem;
+    padding-bottom: 0.5em;
+    color: rgb(136, 134, 134);
+}
+
+.para-light{
+    font-size: 1.5rem;
+    color: rgb(111, 113, 114);
+    word-wrap:break-word;
+    word-spacing: 0.5em;
+    padding-bottom: 0.7em;
+}
+.para-padding{
+    /* padding: 2em; */
+}
+
+.li-font{
+    font-size: 1.4rem;
+    color: rgb(211, 207, 207);
+    padding-bottom: 1em;
+    padding-top: 1em;
+    line-height: 2rem;
+    
+}
+
+.li-bottom-border{
+    border-bottom: 1px solid rgb(163, 160, 160);
+}
+
+/* ---------------   NAVBAR  ------------------------ */
+.digit-div{
+    font-size: 7rem;
+    display: inline-block;
+    color: rgb(33, 168, 33);
+    font-weight: 200;
+    
+}
+.digit{
+    display: inline-block;
+   font-size: 7rem;
+   color: rgb(33, 168, 33);
+   font-weight: 300;
+}
+.p{
+    display: inline-block; 
+     font-size: 3.5rem; 
+     padding-top: 0.6em;
+     font-weight: 800;
+} 
+
+.navbar{
+    /* border: 2px solid rebeccapurple; */
+    height: 15vh;
+    width: 100%;
+}
+
+.navbar-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+}
+.item{
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    font-weight: 600;
+    border-right: 1.5px solid #d6d3d3;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+
+.item8{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*----------------------------- MAIN SECTION----------------*/
+
+.main-section{
+    height: 550px;
+    background-color: #fafafa;
+}
+
+.main-section-div{
+    /* border: black 2px solid; */
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   position: relative;
+}
+
+.img-div{
+    height: 220px;
+    width:470px;
+    overflow: hidden;
+    position: relative;
+    /* border: black 2px solid; */
+    
+}
+.img-div img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-origin: content-box;
+    background-position: center;
+    background-size: cover;
+    background-origin: content-box;
+    transition: transform,width .8s ease-in-out;
+    transform-origin: center;
+    
+
+}
+ .main-section-div .img-div::before{
+     content: "New York Furniture Expo";
+     color: white;
+     background-color: rgba(0, 0, 0, 0.26);
+     display: block;
+     height: 220px;
+     width: 470px;
+     position:absolute;
+     text-align: center;
+     opacity: 1;
+     overflow: hidden;
+     transform: translate(0,50%);
+     transition: all 1s ease-in-out;
+     
+ }
+ .img-div:hover::before{
+     transform: translate(0);
+     z-index: 1;
+ }
+
+.img-div img:hover {
+    width: 500px;
+    z-index: 3;
+}
+
+/* --------------------SECTION2-------------------------- */
+
+.section2{
+    height: 500px;
+    width: 100%;
+    
+}
+.section2-div{
+    height: 80%;
+    width: 85%;
+    /* border: 2px solid red; */
+    margin: 10em auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section2-sub-div{
+    width:30% ;
+    height: 100%;
+    /* border: 2px solid blue; */
+    /* padding: 0 2em 2em 2em; */
+
+}
+
+.section2-sub-div1 .img-text img{
+    height: 25%;
+    width: 23%;
+    display: inline;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.img-text p{
+    width: 70%;
+    display: inline;
+    float: right;
+    
+}
+.img-text::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.img-text{
+    padding-top: 2em;
+    /* border: 2px solid green; */
+}
+
+.section2-sub-div1 span{
+    display: inline-block;
+    padding-top: 5em;
+ padding-left: 2em;
+}
+
+.popular-post-div{
+    display: flex;
+    align-content: space-between;
+    height: 23.5%;
+    width: 100%;
+    /* border: black 2px solid; */
+    
+}
+.popular-post-sub-div{
+    display: flex;
+    align-content: space-between;
+}
+.popular-post-sub-div-img{
+    height: 90%;
+    width: 20%;
+    /* border: 2px solid red; */
+    order: 1;
+    flex-grow: 2;
+    margin-top: 2em;
+}
+.popular-post-sub-div-text{
+    display: block;
+    height: 100%;
+    width: 70%;
+    /* border: 2px solid red; */
+    order:2;
+    flex-grow: 7;
+    padding: 8px;
+    margin-top: 2em;
+}
+
+.popular-post-sub-div-img img{
+    padding: 8px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.popular-post-sub-div-text .heading{
+    color: black;
+}
+
+.featured-post-div{
+    /* border: 2px solid green; */
+}
+
+.featured-post-div-img{
+    overflow: hidden;
+    height: 50%;
+}
+.featured-post-div-text{
+    padding: 2em;
+    background: #fafafa;
+    height: 40%;
+}
+.featured-post-div-text p{
+    padding-top: 1.5em;
+}
+.featured-post-div-img img{
+    height: 100%;
+    width: 100%;
+    padding-top: 2em;
+    display: block;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    transition: transform,width .8s ease-in-out;
+    transform-origin: center;
+    
+}
+.featured-post-div-img img:hover{
+    width: 105%;
+}
+
+
+
+/* -------------------------   section3 div ------------------- */
+.section3{
+    height: 150px;
+    width: 100%;
+    background: #f2f2f2;
+}
+ .section3-div{
+     height: 100%;
+     width: 100%;
+     /* border: green 2px solid; */
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    flex-grow: 1; 
+}
+
+ .section3-img-div{
+     
+     /* border: 2px solid rebeccapurple; */
+     height: 80%;
+     width: 230px;
+    
+
+ }
+  .section3-img-div1{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ } 
+ .section3-img-div img{
+     height: 100%;
+     width: 100%;
+     background: center;
+     background-size: cover;
+     object-fit: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     display: block;
+ }
+
+
+ /* ----------------------   section4 -------------------------- */
+
+ .section4{
+     margin-top: 100px;
+     /* border: 2px solid rebeccapurple; */
+     height: 5300px;
+     width: 100%;
+ }
+ .section4-img-text-div{
+     height: 100%;
+     width: 1200px;
+     /* border: 1px solid red; */
+     margin: 0 auto;
+     
+ }
+
+ .section4-img-div{
+     /* border: 2px solid blue; */
+     height: 600px;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .total{
+     height: 750px;
+     width: 100%;
+     /* border:3px solid limegreen; */
+     position: relative;
+ }
+ .section4-img-div img{
+     height: 100%;
+     width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    background-origin: border-box;
+    transition: transform,width 2s ease-in-out;
+    transform-origin:center;
+ }
+
+ .section4-img-div img:hover{
+     width: 110%;
+ }
+ .section4-text-div{
+     height: 200px;
+     width: 850px;
+     /* border: 2px solid hotpink; */
+     background: #ffffff;
+     padding: 25px;
+     position: absolute;
+     transform: translate(20%,-50%);
+ }
+ .section4-text-div h1:hover{
+     color: rgb(65, 182, 65);
+ }
+
+ .footer{
+     height: 550px;
+     width: 100%;
+     background: #212124f5;
+ }
+ .footer-div{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin: 0 auto;
+     width: 1200px;
+     height: 80%;
+     border-bottom: 1px solid gray;
+ }
+
+ .footer-sub-div{
+     height: 80%;
+     width: 25%;
+     padding: 20px;
+     /* border: 2px solid white; */
+ }
+ .footer-sub-div p{
+     padding-bottom: 1em;
+ }
+ .footer-sub-div span i:hover{
+     color: #55bb7c ;
+
+ }
+ .footer-sub-div li:hover{
+     background: linear-gradient(330deg, #e6cb34 0%, #55bb7c 74%);
+
+ }
+
+ .footer-item{
+     margin: 0 25px 15px 15px;
+     /* border: 2px solid white; */
+     height: 40%;
+     width: 90%;
+ }
+.footer-item img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-origin: border-box;
+    
+}
+
+.footer-ul span{
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 2px;
+    margin-right: 0.5em;
+    background: gray;
+}
+.footer-sub-div3 span{
+    display: inline-block;
+    margin-top: 4em;
+    color: #fff;
+}
+
+input[type="email"], input[type="text"]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: .5em;
+    padding-left: 5px;
+}
+textarea{
+    width: 100%;
+    height: 30%;
+    padding-left: 5px;
+    margin-bottom: 0.5em;
+}
+input[type="submit"]{
+    display:block;
+    padding:8px 20px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: #d8c34f;
+background-image: linear-gradient(330deg, #e6cb34 0%, #55bb7c 74%);
+}
+
+.lowest-footer{
+    /* border: 2px solid green; */
+    height:100px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.span-div{
+    display: flex;
+    justify-content:space-between;
+    flex-grow: 1;
+}
+.a-div{
+    flex-grow: 3;
+}
+
+.logo-div{
+    flex-grow: 2;
+}
